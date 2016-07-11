@@ -1,0 +1,26 @@
+{
+  "name": "node-annotation",
+  "version": "0.0.1",
+  "description": "write application by annotation",
+  "license": "MIT",
+  "main": "bin/node-annotation",
+  "keywords": [
+    "annotation",
+    "spring",
+    "aop",
+    "DI"
+  ],
+  "author": {
+    "name": "robin",
+    "email": "robinlim9@aliyun.com"
+  },
+  "engines": [
+    "node"
+  ],
+  "dependencies": {
+    "fibers": "^1.0.13",
+    "lodash": "~3.10.1",
+    "promise": "7.0.0",
+    "trycatch": "^1.5.21"
+  }
+}

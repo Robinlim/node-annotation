@@ -1,0 +1,24 @@
+'use strict';
+
+var nodeAnnotation = module.exports = {
+    Annotation: require('../lib/annotation/Annotation'),
+    ApplicationContext: require('../lib/ApplicationContext'),
+    PROXYCYCLE: require('../lib/PROXYCYCLE'),
+    INTERCEPTOR: require('../lib/INTERCEPTOR'),
+    start: function(path, ignoreDirs, callback) {
+        if (typeof ignoreDirs == 'function') {
+            callback = ignoreDirs;
+            ignoreDirs = null;
+        }
+        var Scanner = require('../lib/Scanner');
+        new Scanner(path, ignoreDirs).execute(callback);
+    }
+}
+
+var FUNS = ['app', 'configurePath', 'setGlobalErrorHandler', 'setLogger'];
+FUNS.forEach(function(el){
+    nodeAnnotation[el] = function(){
+        var appctx = nodeAnnotation.ApplicationContext;
+        appctx[el].apply(appctx, arguments);
+    } 
+});
