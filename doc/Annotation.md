@@ -1,6 +1,6 @@
 # 自定义注解
 ## 如何被扫描器识别
-需要加注解 **AutoLoad** ，这样才会被识别，参见 [AutoLoad](./doc/annotation/AutoLoad.md)
+需要加注解 **AutoLoad** ，这样才会被识别，参见 [AutoLoad](./annotation/AutoLoad.md)
 
 ## 如何成为注解类
 需要继承自`require('node-annotation').Annotation`，直接使用其.extend方法即可
@@ -8,10 +8,10 @@
 > `extend`方法的第一个参数为类的所有成员方法／变量的对象，第二个参数为类的所有静态方法／变量的对象
 
 ## 注解数据模型
-请参见 [Model](./doc/Model.md)
+请参见 [Model](./Model.md)
 
 ## 模块代理
-请参见 [Proxy](./doc/Proxy.md)
+请参见 [Proxy](./Proxy.md)
 
 ## 模版
 

@@ -1,5 +1,5 @@
 # 层次
-被这些层次注解修饰的模块都会成为node-annotation的组件存在。参数支持也和[Component](./doc/annotation/DI.md)一样
+被这些层次注解修饰的模块都会成为node-annotation的组件存在。参数支持也和[Component](./DI.md)一样
 ##  Controller  控制层
 该层主要处理请求映射与返回
 ### RequestMapping 请求路径映射
