@@ -6,14 +6,17 @@
 
 > 作用类似于express的router中间件，被注解的函数将收到注解描述的url规则的请求
 
-### 优先级 
+### 路由规则及优先级 
 
 - 路由匹配的优先级为 
 
-​	纯字符串路由(eg: /goods/aaa) > 一级前缀路由(eg:/goods/{name}) > 纯正则路由(eg: {url:"^goods\\\/[a-z]*$",useExp:true})
+  纯字符串路由(eg: /goods/aaa) > 一级前缀路由(eg:/goods/{name}) > 纯正则路由(eg: {url:"^goods\\\/[a-z]*$",useExp:true})
 
-- 同一优先级内按书写先后顺序
-- 跨controller的优先级按controller加载顺序
+- 同一优先级内按书写先后顺序。
+
+- 跨controller的优先级按controller加载顺序。
+
+- 对于任意路由规则都没有匹配到时，如果你定义了路径为“/404”的路由规则，则301重定向过去，否则，直接返回404 NotFound。
 
 ### 注解参数
 
@@ -73,13 +76,13 @@
   Promise.prototype.done = function (onFulfilled, onRejected) {
     var self = arguments.length ? this.then.apply(this, arguments) : this
     if (process.domain) {
-    	process.domain.emit('error', err)
+      process.domain.emit('error', err)
     } else {
       self.then(null, function (err) {
         setTimeout(function () {
-    	    throw err
+          throw err
         }, 0)
-    	})
+      })
     }
   }
   ```
@@ -89,6 +92,8 @@
 # ControllerAdvice
 
 > 控制器增强，可以在其内使用@ExceptionHandler，将把其内的的错误处理应用于全部的@Controller
+>
+> 推荐在这里捕获所有错误，完成返回500服务器错误等操作。
 
 
 
