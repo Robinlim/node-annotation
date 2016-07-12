@@ -1,6 +1,6 @@
 # Controller
 
-> 控制器相关,继承自 [Component](./doc/annotation/DI.md),在该注解下才可以使用下述的子注解
+> 控制器相关,继承自 [Component](./DI.md),在该注解下才可以使用下述的子注解
 
 ## RequestMapping
 

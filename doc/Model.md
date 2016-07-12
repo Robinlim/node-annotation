@@ -7,5 +7,5 @@
 - vo  获取注解修饰的变量名称
 - voParam 获取注解修饰的变量参数，当该变量类型为方法时才有值
 - classpath 获取注解所在模块的路径
-- exports 获取模块[Proxy](./doc/Proxy.md)
+- exports 获取模块[Proxy](./Proxy.md)
 - instance 获取模块本身

@@ -18,6 +18,13 @@
     "name": "robin",
     "email": "robinlim9@aliyun.com"
   },
+  "contributors": [{
+    "name": "robin",
+    "email": "robinlim9@aliyun.com"
+  },{
+    "name": "wyw",
+    "email": "1006629314@qq.com"
+  }],
   "engines": [
     "node"
   ],
