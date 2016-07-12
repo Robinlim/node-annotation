@@ -1,6 +1,10 @@
 # Configure
 ##  设置配置文件路径
-默认配置文件路径为 **启动进程所在路径 + resource** 目录，可通过 ```require('node-annotation').configurePath(指定目录)``` 来指定目录
+默认配置文件路径为 **启动进程所在路径 + resource** 目录，可通过
+
+ ```require('node-annotation').configurePath(指定目录)``` 
+
+来指定目录
 
 ##  参数
 支持两种参数形式
@@ -10,9 +14,9 @@
 - 变量名
   变量路径，这里会将所有配置文件里的内容进行合并，当命名冲突产生，合并的为
   *	当值为简单类型时会被覆盖
-  * 当值为复杂对象(非数组类型)时会取并集
-  * 当值为复杂对象(数组类型)时会进行concat操作
-  比如：
+  *	当值为复杂对象(非数组类型)时会取并集
+  *	当值为复杂对象(数组类型)时会进行concat操作
+    比如：
   ```
     {"data": [{ "user": "barney" }, { "user": "fred" }]} 和
     {"data": [{ "age": 36 }, { "age": 40 }]} 会得到
@@ -57,3 +61,6 @@ settings: null,
 ...
 ```
 settings的值为Hello
+
+
+> 整个Demo参见[node-annotation-example](https://www.npmjs.com/package/node-annotation-example) 中的example/webApp/app.js

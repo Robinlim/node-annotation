@@ -1,9 +1,13 @@
 {
   "name": "node-annotation",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "write application by annotation",
   "license": "MIT",
   "main": "bin/node-annotation",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Robinlim/node-annotation.git"
+  },
   "keywords": [
     "annotation",
     "spring",

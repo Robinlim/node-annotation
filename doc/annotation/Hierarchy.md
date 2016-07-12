@@ -12,3 +12,5 @@ response.render支持对象类型，作为接口api存在的时候很方便。
 
 ##  Repository  存储层
 该层主要与数据库打交道
+
+> 整个Demo参见[node-annotation-example](https://www.npmjs.com/package/node-annotation-example) 中的example/Hierarchy
