@@ -1,6 +1,6 @@
 {
   "name": "node-annotation",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "write application by annotation",
   "license": "MIT",
   "main": "bin/node-annotation",
