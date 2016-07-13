@@ -1,5 +1,5 @@
 # node-annotation
-node-annotation开发的初衷是因为node本身在服务层面并不太成熟，而且代码层次及维护各大公司都有自己的做法，借鉴于Java里spring的想法开发了这个，当然在功能实现上和spring相差甚多，这里只实现了几个重要功能，欢迎有志同道合者共同来维护。
+node-annotation开发的初衷是因为node本身在服务层面并不太成熟，而且代码层次及维护各大公司都有自己的做法，借鉴于Java里spring的想法开发了这个，当然在功能实现上和spring相差甚多，这里只实现了几个重要功能，欢迎有志同道合者共同来维护。(QQ群：523291195)
 
 ## 注解
 注解区别于正常可运行的代码，仅仅是注释的写法，这里写法格式为:
@@ -22,7 +22,7 @@ nodeAnnotation.setGlobalErrorHandler(function(err){
 /** 配置node－annotation内的日志流出
  * [Boolean] 是否开启日志，默认true
  * [String] "error/warn/info/log" 输出日至级别，默认warn
- * [Function/LoggerObject] 日志处理函数或对象(类似log4js的Logger对象)，默认为console 
+ * [Function/LoggerObject] 日志处理函数或对象(类似log4js的Logger对象)，默认为console
  */
 nodeAnnotation.setLogger(true, 'info', function(str, level) {
     console.log('[NodeAnnotation]', str);
@@ -89,7 +89,7 @@ nodeAnnotation.setGlobalErrorHandler(function(err){
 /** 配置node－annotation内的日志流出
  * [Boolean] 是否开启日志，默认true
  * [String] "error/warn/info/log" 输出日至级别，默认warn
- * [Function/LoggerObject] 日志处理函数或对象(类似log4js的Logger对象)，默认为console 
+ * [Function/LoggerObject] 日志处理函数或对象(类似log4js的Logger对象)，默认为console
  */
 nodeAnnotation.setLogger(true, 'info', function(str, level) {
     console.log('[NodeAnnotation]', str);
