@@ -5,6 +5,7 @@ var nodeAnnotation = module.exports = {
     ApplicationContext: require('../lib/ApplicationContext'),
     PROXYCYCLE: require('../lib/PROXYCYCLE'),
     INTERCEPTOR: require('../lib/INTERCEPTOR'),
+    Utils: require('../lib/Utils'),
     start: function(path, ignoreDirs, callback) {
         if (typeof ignoreDirs == 'function') {
             callback = ignoreDirs;

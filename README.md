@@ -184,3 +184,7 @@ nodeAnnotation.start(dirs, function() {
 
 ## 注解第三方扩展
 请参考项目 [node-annotation-extend](https://github.com/Robinlim/node-annotation-extend)
+
+
+## 历史版本
+- 1.0.0 删除了对fibers的依赖，将async的支持挪至 [node-annotation-async](https://github.com/Robinlim/node-annotation-async)

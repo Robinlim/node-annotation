@@ -1,6 +1,6 @@
 {
   "name": "node-annotation",
-  "version": "0.0.10",
+  "version": "1.0.0",
   "description": "write application by annotation",
   "license": "MIT",
   "main": "bin/node-annotation",
@@ -29,7 +29,6 @@
     "node"
   ],
   "dependencies": {
-    "fibers": "^1.0.13",
     "lodash": "~3.10.1",
     "promise": "7.0.0",
     "trycatch": "^1.5.21"
